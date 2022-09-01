@@ -1,11 +1,3 @@
-/* todo list:
- * -tendria que pasarle un profiler y sacarle debugging
- * -mejorar la extrapolación
- * -revisar que calcSignedDistances() funcione;
- * -mejorar el algoritmo de advección (runge-kutta?)
- * -Catmull-Rom interpolation?
- * -quiza pueda implementar los punteros a array para evitar uno de los loops de adveccion (quizá se pueda hacer algo elegante, modificando el operador [] o el ())
- */
 
 #ifndef GLWIDGET_H
 #define GLWIDGET_H
@@ -25,11 +17,11 @@
 #include "Mouse.h"
 #include "Common.h"
 
-#define TOTAL_TIME					(0*DT)
-#define TIME_PER_FRAME				(1*DT)
-#define VIDEO_CAPTURE				false
-#define FILL_FLUID					true
-#define FLUID_BORDER				false
+#define TOTAL_TIME	(0*DT)
+#define TIME_PER_FRAME	(1*DT)
+#define VIDEO_CAPTURE	false
+#define FILL_FLUID	true
+#define FLUID_BORDER	false
 
 class QPainter;
 class QPaintEvent;
